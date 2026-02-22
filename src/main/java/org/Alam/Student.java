@@ -5,36 +5,37 @@ public class Student {
     private int studentId;
     private String sName;
     private int sAge;
-
     //constructor injection
-    private Computer comp;
+    private Computer computer1Object;
+
+
     public Student (Computer comp1) {
-        this.comp = comp1;
+        this.computer1Object = comp1;
     }
 
     public Student() {
         System.out.println("Student no args construtor");
     }
 
-    public Student(int studentId, String sName, int sAge, Computer comp) {
-        this.studentId = studentId;
-        this.sName = sName;
-        this.sAge = sAge;
-        this.comp = comp;
-    }
+//    public Student(int studentId, String sName, int sAge, Computer comp) {
+//        this.studentId = studentId;
+//        this.sName = sName;
+//        this.sAge = sAge;
+//        this.comp = comp;
+//    }
+//
+//    public void code() {
+//        System.out.println("Student is coding...");
+//        comp.compile();
+//    }
 
-    public void code() {
-        System.out.println("Student is coding...");
-        comp.compile();
-    }
-
-    public Computer getComp() {
-        return comp;
-    }
-
-    public void setComp(Computer comp) {
-        this.comp = comp;
-    }
+//    public Computer getComp() {
+//        return comp;
+//    }
+//
+//    public void setComp(Computer comp) {
+//        this.comp = comp;
+//    }
 
     public int getStudentId() {
         return studentId;
@@ -66,7 +67,7 @@ public class Student {
                 "studentId=" + studentId +
                 ", sName='" + sName + '\'' +
                 ", sAge=" + sAge +
-                ", comp=" + getComp() +
+                ", comp=" +
                 '}';
     }
 }

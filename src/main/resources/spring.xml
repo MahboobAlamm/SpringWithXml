@@ -4,26 +4,26 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id = "student" class="org.Alam.Student" scope="prototype">
+    <bean id = "student" class="org.Alam.Student" scope="prototype" autowire="byName">
         <constructor-arg ref = "comp1">
         </constructor-arg>
     </bean>
 
-    <bean id = "comp" class="org.Alam.Laptop">
+    <bean id = "computer1Object" class="org.Alam.Laptop">
     </bean>
     <bean id = "comp1" class="org.Alam.Desktop">
     </bean>
 
 <!--    This should be called for no argument constructor-->
-    <bean id="studentNoArgs" class="org.Alam.Student">
-    </bean>
+<!--    <bean id="studentNoArgs" class="org.Alam.Student">-->
+<!--    </bean>-->
 
 <!--    This should be called for argument with three parameter-->
-    <bean id = "studentWithAllArgs" class="org.Alam.Student">
-        <constructor-arg index="0" value="1"/>
-        <constructor-arg index="1" value="Mahboob"/>
-        <constructor-arg index="2" value="24"/>
-        <constructor-arg index="3" ref="comp"/>
-    </bean>
+<!--    <bean id = "studentWithAllArgs" class="org.Alam.Student">-->
+<!--        <constructor-arg index="0" value="1"/>-->
+<!--        <constructor-arg index="1" value="Mahboob"/>-->
+<!--        <constructor-arg index="2" value="24"/>-->
+<!--        <constructor-arg index="3" ref="comp"/>-->
+<!--    </bean>-->
 
 </beans>
