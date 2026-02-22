@@ -11,7 +11,7 @@ public class App
 
         ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml"); //creating IoC container with spring.xml configuration
 
-        Student st = context.getBean("student", Student.class);
+        Student st = (Student) context.getBean("student");  // casting as getBean by default Object  
         st.code(); // concept of interface
         System.out.println("st : " + st);  //only comp is defined
 
