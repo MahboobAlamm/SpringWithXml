@@ -6,14 +6,14 @@ public class Student {
     private String sName;
     private int sAge;
 
-    private Laptop laptop;
-    public Student (Laptop lap1) {
-        this.laptop = lap1;
+    private Computer comp;
+    public Student (Computer comp1) {
+        this.comp = comp1;
     }
 
     public void code() {
         System.out.println("Student is coding...");
-        laptop.compile();
+        comp.compile();
     }
 
     public Student() {

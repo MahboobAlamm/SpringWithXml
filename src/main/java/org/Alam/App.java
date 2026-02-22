@@ -14,6 +14,7 @@ public class App
         st.setStudentId(1);
         st.setsName("Mahboob");
         st.setsAge(24);
+        System.out.println(st);
         st.code();
 
 //        Student st1 = context.getBean("student", Student.class);
@@ -21,7 +22,6 @@ public class App
 //        st1.setsName("Mahfooz");
 //        st1.setsAge(25);
 
-        System.out.println(st);
 //        System.out.println(st1);
 
     }

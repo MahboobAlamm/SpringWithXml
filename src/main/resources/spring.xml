@@ -5,9 +5,10 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id = "student" class="org.Alam.Student" scope="prototype">
-        <constructor-arg ref = "lap1"></constructor-arg>
+        <constructor-arg ref = "comp1"></constructor-arg>
     </bean>
 
-    <bean id = "lap1" class="org.Alam.Laptop"></bean>
+    <bean id = "comp" class="org.Alam.Laptop"></bean>
+    <bean id = "comp1" class="org.Alam.Desktop"></bean>
 
 </beans>

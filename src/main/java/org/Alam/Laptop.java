@@ -1,8 +1,8 @@
 package org.Alam;
 
-public class Laptop {
+public class Laptop implements Computer {
 
     public void compile(){
-        System.out.println("Compiling from laptop");
+        System.out.println("Compiling from Laptop....");
     }
 }
