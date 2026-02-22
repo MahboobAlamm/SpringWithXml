@@ -6,6 +6,16 @@ public class Student {
     private String sName;
     private int sAge;
 
+    private Laptop laptop;
+    public Student (Laptop lap1) {
+        this.laptop = lap1;
+    }
+
+    public void code() {
+        System.out.println("Student is coding...");
+        laptop.compile();
+    }
+
     public Student() {
         System.out.println("Student no args construtor");
     }
