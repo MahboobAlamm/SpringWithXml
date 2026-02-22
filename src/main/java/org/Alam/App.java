@@ -15,7 +15,13 @@ public class App
         st.setsName("Mahboob");
         st.setsAge(24);
 
+        Student st1 = context.getBean(Student.class, "student");
+        st1.setStudentId(2);
+        st1.setsName("Mahfooz");
+        st1.setsAge(2);
+
         System.out.println(st);
+        System.out.println(st1);
 
     }
 }

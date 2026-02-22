@@ -7,6 +7,7 @@ public class Student {
     private int sAge;
 
     public Student() {
+        System.out.println("Student no args construtor");
     }
 
     public Student(int studentId, String sName, int sAge) {
