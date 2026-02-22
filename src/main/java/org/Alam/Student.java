@@ -6,9 +6,21 @@ public class Student {
     private String sName;
     private int sAge;
 
+    //constructor injection
     private Computer comp;
     public Student (Computer comp1) {
         this.comp = comp1;
+    }
+
+    public Student() {
+        System.out.println("Student no args construtor");
+    }
+
+    public Student(int studentId, String sName, int sAge, Computer comp) {
+        this.studentId = studentId;
+        this.sName = sName;
+        this.sAge = sAge;
+        this.comp = comp;
     }
 
     public void code() {
@@ -16,14 +28,12 @@ public class Student {
         comp.compile();
     }
 
-    public Student() {
-        System.out.println("Student no args construtor");
+    public Computer getComp() {
+        return comp;
     }
 
-    public Student(int studentId, String sName, int sAge) {
-        this.studentId = studentId;
-        this.sName = sName;
-        this.sAge = sAge;
+    public void setComp(Computer comp) {
+        this.comp = comp;
     }
 
     public int getStudentId() {
@@ -56,6 +66,7 @@ public class Student {
                 "studentId=" + studentId +
                 ", sName='" + sName + '\'' +
                 ", sAge=" + sAge +
+                ", comp=" + getComp() +
                 '}';
     }
 }
